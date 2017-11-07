@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+}
+
+#menu-bar{
+  background: crimson;
+  color: #fff;
+  padding: 10px;
+}
+
+#menu-bar h1{
+  font-size: 24px;
+  font-weight: normal;
+  display: inline-block;
+}
+
+#menu-bar ul{
+  float: right;
+  list-style-type: none;
+  padding: 0;
+  margin: 6px 0;
+}
+
+#menu-bar li{
+  float: right;
+  margin-left: 20px;
+}
+
+#menu-bar a{
+  color: #fff;
+}
+
+.but {
+	padding: 8px;
+}
+
+.content{
+	padding: 20px;
+}
+
+#newsList {
+	margin: 0;
+	padding: 0;
+}
+
+#newsList li.ng-enter {
+  transition:0.2s linear all;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+#newsList li.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#newsList li.ng-leave {
+  transition:0.2s linear all;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#newsList li.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#newsList li a {
+  transition: all 0.2s;
+}

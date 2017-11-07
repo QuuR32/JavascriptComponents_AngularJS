@@ -1,0 +1,22 @@
+<div class="content">
+	<table style="padding-top: 20px;">
+		<tr>
+			<td valign="top" style="width: 300px;">
+				<button class="but" ng-click="setNewNews()">Ajouter une nouvelle news</button><br /><br />
+				<ul id="newsList">
+					<li ng-repeat="n in news" style="list-style: none; padding: 6px;" class="news">
+						<button ng-click="deleteNews(n.news.ID)">x</button>
+						<a id="aNews_{{n.news.ID}}" href="#" style="padding: 6px; border-radius: 10px; text-decoration: none;" ng-click="selectNews(n.news)">{{n.news.Titre}}</a>
+					</li>
+				</ul>
+			</td>
+			<td valign="top" style="padding-left: 20px;">
+				<form name="form.formNews" ng-submit="addNews()">
+				    <input style="width: 300px;" type="text" placeholder="Titre" ng-model="newNews.Titre" /><br />
+				    <textarea style="width: 600px; height: 400px;" placeholder="Contenu" ng-model="newNews.Contenu"></textarea><br />
+				    <input type="submit" id="butSubmit" class="but" style="float: right;" value="Creer une news"></input>
+				</form>
+			</td>
+		</tr>
+	</table>
+</div>
