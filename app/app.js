@@ -1,5 +1,5 @@
-// const AJAX_BASE_URL = 'http://atelierlibre.url.ph/app/JavascriptComponents_WS/';
-const AJAX_BASE_URL = '/JavascriptComponents_WS/';
+const AJAX_BASE_URL = 'http://atelierlibre.url.ph/app/JavascriptComponents_WS/';
+// const AJAX_BASE_URL = '/JavascriptComponents_WS/';
 
 var myApp = angular.module('MyApp', ['ngRoute', 'ngAnimate']);
 
